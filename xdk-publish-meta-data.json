@@ -1,0 +1,65 @@
+{
+  "categorization": {
+    "type": "APPLICATION",
+    "category": "Productivity"
+  },
+  "description": {
+    "texts": {
+      "title": "Tarefas",
+      "features": [
+        ""
+      ],
+      "short-description": "Simples aplicativo para gestão de tarefas",
+      "full-description": "Com este simples aplicativo você pode adicionar e excluir tarefas para não esquecer de nada no seu dia!",
+      "keywords": "tarefas,task,todolist, todo, list",
+      "recent-changes": "",
+      "privacy-policy": "",
+      "eula": ""
+    },
+    "images": {
+      "screenshots": [],
+      "app-icon-small": "",
+      "app-icon": "",
+      "small-promo": "",
+      "large-promo": ""
+    },
+    "videos": {
+      "video-url": ""
+    }
+  },
+  "packages": {
+    "apk-file": "",
+    "zip-xdk-compliant": false,
+    "zip-file": "",
+    "secondary-apk-file": ""
+  },
+  "support": {
+    "email": "paico@mail.com",
+    "website": "https://paico.github.io"
+  },
+  "testing-instructions": "",
+  "description-pt_br": {
+    "texts": {
+      "title": "Tarefas",
+      "features": [
+        ""
+      ],
+      "short-description": "",
+      "full-description": "",
+      "keywords": "",
+      "recent-changes": "",
+      "privacy-policy": "",
+      "eula": ""
+    },
+    "images": {
+      "screenshots": [],
+      "app-icon-small": "",
+      "app-icon": "",
+      "small-promo": "",
+      "large-promo": ""
+    },
+    "videos": {
+      "video-url": ""
+    }
+  }
+}

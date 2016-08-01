@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>App Framework Kitchen Sink</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+    <script src='inc/js.js'></script>
+    <link rel="stylesheet" type="text/css" href="inc/css.css" />
+        
+</head>
+
+<body onload="onDeviceReady()">
+    <div id="splashscreen" class='ui-loader heavy'>
+        App Framework
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view splitview">
+        
+        <header>
+            <a class="menuButton" data-left-menu="left" data-transition="cover" style="float:left"></a>
+            <h1>Tarefas</h1>
+        </header>
+        
+        <div class="pages">
+            
+            <div class="panel" id="main" data-title="Tarefas" data-selected="true">
+                <input id="tarefa" type="search" placeholder="Nova tarefa" onsearch="novo()">
+                <div id="msg"></div>
+                <div id="resultados"></div>
+            </div>
+            
+            <div class="panel" id="sobre" data-title="Sobre">
+                Desenvolvido por Tiago Floriano (<a href="https://paico.github.io">paico.github.io</a>).<br>
+                D&uacute;vidas, problemas ou sugest&otilde;es: <br>
+                <a href="mailto:paico@mail.com">paico@mail.com</a>
+            </div>
+        </div>
+
+        <nav id="left">
+            <div class="view active">
+                <header>
+                    <h1>Menu</h1>
+                </header>
+                <div class="pages">
+                    <div class="panel active" id="navPage1" data-title="Foobar">
+                        <ul class="list">
+                            <li><a href="#main" onclick="$.afui.clearHistory()">Tarefas</a></li>
+                            <li><a href="#sobre" onclick="$.afui.clearHistory()">Sobre</a></li>
+                            <li><a href="#sair" onclick="navigator.app.exitApp();">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</body>
+
+</html>
